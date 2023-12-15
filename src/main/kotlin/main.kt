@@ -5,10 +5,12 @@ import org.juventus.seo2.lambda.operate
 import org.juventus.seo2.stream.streamNumberList
 import org.juventus.seo2.stream.streamNumberListDebug
 import org.juventus.seo2.stream.streamPersonList
+import org.juventus.seo2.streams.nioEx
+import java.nio.file.Paths
 import java.util.Date
 
 fun main() {
-    println(dateToString(Date()))
+    /*println(dateToString(Date()))
 
     println(operate(1, 2) { a, b -> a + b })
     println(operate(2, 1) { a, b -> a - b })
@@ -22,4 +24,8 @@ fun main() {
     streamNumberList()
     println("=========")
     streamPersonList()
+    */
+    //copy("resources/text.txt", "resources/text1.txt")
+
+    nioEx()
 }
